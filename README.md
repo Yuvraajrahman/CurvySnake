@@ -8,7 +8,7 @@ This repo includes a simple MERN-style site:
 
 - **React (Vite)** frontend in `client/`
 - **Node/Express** API in `api/` (optional Mongo logging via `MONGODB_URI`)
-- The game script is available for download as `curvy-snake.py`
+- The download button pulls the `.py` file directly from GitHub (raw URL)
 
 ## Requirements
 

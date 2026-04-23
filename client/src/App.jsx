@@ -1,7 +1,8 @@
 import './App.css'
 
 function App() {
-  const directFile = '/curvy-snake.py'
+  const directFile =
+    'https://raw.githubusercontent.com/Yuvraajrahman/CurvySnake/main/Group8%20cse423%20sping%202023%20project.py'
   const apiDownload = '/api/download'
 
   return (
@@ -23,8 +24,13 @@ function App() {
           </p>
 
           <div id="download" className="ctaRow">
-            <a className="button primary" href={directFile} download>
-              Download .py (static)
+            <a
+              className="button primary"
+              href={directFile}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Download .py (from GitHub)
             </a>
             <a className="button" href={apiDownload}>
               Download via API
@@ -43,7 +49,7 @@ function App() {
               <li>
                 Run the game:
                 <div className="codeRow">
-                  <code>python "curvy-snake.py"</code>
+                  <code>python "Group8 cse423 sping 2023 project.py"</code>
                 </div>
               </li>
             </ol>

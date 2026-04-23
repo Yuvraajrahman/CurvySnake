@@ -19,8 +19,10 @@ app.get('/api/download', async (req, res) => {
     }
   }
 
-  // The file itself is served as a static asset by the React app build.
-  res.redirect(302, '/curvy-snake.py')
+  res.redirect(
+    302,
+    'https://raw.githubusercontent.com/Yuvraajrahman/CurvySnake/main/Group8%20cse423%20sping%202023%20project.py',
+  )
 })
 
 // Local dev convenience (Vercel will handle the serverless runtime)
