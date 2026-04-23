@@ -21,7 +21,7 @@ app.get('/api/download', async (req, res) => {
 
   res.redirect(
     302,
-    'https://raw.githubusercontent.com/Yuvraajrahman/CurvySnake/main/Group8%20cse423%20sping%202023%20project.py',
+    'https://github.com/Yuvraajrahman/CurvySnake/raw/main/Group8%20cse423%20sping%202023%20project.py',
   )
 })
 
