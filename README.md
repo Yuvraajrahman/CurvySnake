@@ -4,11 +4,11 @@ A smooth, curve-based Snake game built with Pygame. Control a snake that moves i
 
 ## Website (Download Page)
 
-This repo includes a simple MERN-style site:
+This repo includes a simple **static HTML + CSS** website (no React/Node required).
 
-- **React (Vite)** frontend in `client/`
-- **Node/Express** API in `api/` (optional Mongo logging via `MONGODB_URI`)
-- The download button pulls the `.py` file directly from GitHub (raw URL)
+- Website entrypoint: `index.html`
+- Styles: `styles.css`
+- Download link points to the GitHub file page.
 
 ## Requirements
 
@@ -29,33 +29,15 @@ python "Group8 cse423 sping 2023 project.py"
 
 ## Run the website locally
 
-Frontend:
-
-```bash
-cd client
-npm install
-npm run dev
-```
-
-API (optional, for `/api/download` + `/api/health`):
-
-```bash
-cd api
-npm install
-npm run dev
-```
-
-Then open `http://localhost:5173`.
+Open `index.html` in a browser.
 
 ## Deploy to Vercel
 
 1. Push this repo to GitHub.
 2. In Vercel, click **New Project** and import the repo.
-3. Keep **Root Directory** as the repo root (this is required for `vercel.json` to wire both frontend + API).
-4. (Optional) Add an environment variable:
-   - `MONGODB_URI` = your MongoDB connection string (enables download logging)
+3. Keep **Root Directory** as the repo root.
 
-Vercel will build the React app and deploy the API automatically.
+Vercel will deploy the static site automatically.
 
 ## Gameplay
 

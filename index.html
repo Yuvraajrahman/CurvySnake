@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CurvySnake — Download</title>
+    <meta
+      name="description"
+      content="Download the CurvySnake Python game and run it locally with Pygame."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrap headerRow">
+        <div class="brand">CurvySnake</div>
+        <nav class="nav">
+          <a href="#download">Download</a>
+          <a href="#run">Run</a>
+          <a href="#controls">Controls</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap main">
+      <section class="hero">
+        <h1>Curvy Snake (Python)</h1>
+        <p class="subtitle">
+          A smooth, curve-based Snake game built with Pygame. Download the script
+          from GitHub and run it locally.
+        </p>
+
+        <div id="download" class="ctaRow">
+          <a
+            class="button primary"
+            href="https://github.com/Yuvraajrahman/CurvySnake/blob/main/Group8%20cse423%20sping%202023%20project.py"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Download game (.py)
+          </a>
+          <a
+            class="button"
+            href="https://github.com/Yuvraajrahman/CurvySnake"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View repo
+          </a>
+        </div>
+      </section>
+
+      <section class="grid">
+        <div class="card" id="run">
+          <h2>How to run</h2>
+          <ol class="steps">
+            <li>
+              Install Pygame:
+              <div class="codeRow"><code>pip install pygame</code></div>
+            </li>
+            <li>
+              Run the game:
+              <div class="codeRow">
+                <code>python "Group8 cse423 sping 2023 project.py"</code>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="card" id="controls">
+          <h2>Controls</h2>
+          <ul class="list">
+            <li><strong>LEFT</strong>: rotate counterclockwise</li>
+            <li><strong>RIGHT</strong>: rotate clockwise</li>
+            <li><strong>SPACE</strong>: slow down</li>
+            <li><strong>UP</strong>: speed up</li>
+          </ul>
+          <p class="hint">
+            At startup press <strong>1</strong>, <strong>2</strong>, or
+            <strong>3</strong> to select difficulty.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footerRow">
+        <span>© <span id="year"></span> CurvySnake</span>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear()
+    </script>
+  </body>
+</html>
+
